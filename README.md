@@ -1,65 +1,44 @@
 # Pluggit
 
-Home Assistant integration for Pluggit ventilation units
+Home Assistant Integration für Pluggit Lüftungsgeräte
 
-> [!NOTE]
-> This integration is based on the Dantherm integration, as the Pluggit and Dantherm ventilation units appear to share the same controller hardware. This repository does not contain the entire integration; instead, most of the code is copied from the Dantherm integration with each release to avoid maintaining the code in two places. For more detailed documentation, please refer to the Dantherm integration [here](https://github.com/Tvalley71/dantherm).
+Unterstützte Geräte
 
-### Support
-
-You can [open issues directly](https://github.com/Tvalley71/pluggit/issues/new) on this repository. To keep discussions centralized, please refer to the Dantherm Integration [here](https://github.com/Tvalley71/dantherm/discussions).
-
-Known supported units:
-
-- AP310
-- 
+- AP190
+- AP310 (getestet)
+- AP460
+- AD160
 
 ### Installation
 
-> [!IMPORTANT]
-> Installation directly through HACS is not yet available because the integration is not yet official included into HACS. This process will take some time. In the meantime, please use the manual installation method or click the below **Open HACS Repository** button.
-
-<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=Tvalley71&repository=Pluggit&category=Integration"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." width="" height=""></a>
+Todo
 
 #### Installation via HACS (Home Assistant Community Store)
 
-1. Ensure you have HACS installed and configured in your Home Assistant instance.
-2. Open the HACS (Home Assistant Community Store) by clicking **HACS** in the side menu.
-3. Click on **Integrations** and then click the **Explore & Download Repositories** button.
-4. Search for "Pluggit" in the search bar.
-5. Locate the "Pluggit Integration" repository and click on it.
-6. Click the **Install** button.
-7. Once installed, restart your Home Assistant instance.
+Todo
 
 #### Manual Installation
 
-1. Navigate to your Home Assistant configuration directory.
-    - For most installations, this will be **'/config/'**.
-2. Inside the configuration directory, create a new folder named **'custom_components'** if it does not already exist.
-3. Inside the **'custom_components'** folder, create a new folder named **'pluggit'**.
-4. Download the latest release of the Pluggit integration from the [releases page](https://github.com/Tvalley71/pluggit/releases/latest) into the **'custom_components/pluggit'** directory:
-5. Once the files are in place, restart your Home Assistant instance.
+Todo
 
-### Configuration
+#### Configuration
 
-After installation, add the Pluggit integration to your Home Assistant configuration.
+Todo
 
-1. In Home Assistant, go to **Configuration > Integrations.**
-2. Click the **+** button to add a new integration.
-3. Search for "Pluggit" and select it from the list of available integrations.
-4. Follow the on-screen instructions to complete the integration setup.
+#### Haftungsausschluss
 
+Das Warenzeichen „Pluggit“ ist Eigentum der Pluggit GmbH.
 
-## Disclaimer
+Alle in diesem Repository genannten Produktnamen, Marken und eingetragenen Warenzeichen sind Eigentum ihrer jeweiligen Rechteinhaber.
 
-The trademark "Pluggit" is owned by Pluggit GmbH.
+Ich stehe in keiner Verbindung zu Pluggit.
+Ich als Autor übernehme keine Garantie für die Funktionalität dieser Integration und haftet nicht für eventuelle Schäden.
 
-The trademark "Dantherm" is owned by Dantherm Group A/S.
+#### Herkunft des Projekts
+Dieses Projekt basiert auf dem ursprünglichen Repository [Pluggit](https://github.com/Tvalley71/pluggit) von Tvalley71. 
+Vielen Dank an den ursprünglichen Entwickler für die Grundlage dieses Projekts.
+Dieses Repository ist unabhängig vom ursprünglichen Projekt und wird hier eigenständig weiterentwickelt.
 
-All product names, trademarks, and registered trademarks mentioned in this repository are the property of their respective owners.
-
-#### I am not affiliated with Pluggit or Dantherm, except as the owner of a Dantherm HCV400 P2 unit.
-
-### The author does not guarantee the functionality of this integration and is not responsible for any damage.
-
-_Tvalley71_
+#### Lizenz
+Dieses Projekt steht unter derselben Lizenz wie das ursprüngliche Repository, der Apache License 2.0 (oder der GNU General Public License (GPL), falls das zutrifft).
+Die Lizenzbedingungen des ursprünglichen Projekts bleiben weiterhin gültig. Die Datei LICENSE enthält die Details.

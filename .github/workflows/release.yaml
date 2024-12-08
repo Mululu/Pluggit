@@ -39,9 +39,13 @@ jobs:
           cd "${{ github.workspace }}/custom_components/Pluggit-Pro"
           zip -r pluggit-pro.zip ./
 
+        - name: 🔍 Debug GITHUB_TOKEN
+        run: echo "GITHUB_TOKEN is set"
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: 📤 Upload the zip file as a release asset
         uses: actions/upload-release-asset@v1
-        run: echo "GITHUB_TOKEN is set"
         env:
             GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         with:

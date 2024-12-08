@@ -1,13 +1,9 @@
-# This GitHub action workflow is meant to be copyable to any repo that have the same structure.
-# - Your integration exist under custom_components/{INTEGRATION_NAME}/[integration files]
-# - You are using GitHub releases to publish new versions
-
 name: Release Workflow
 
 on:
   release:
     types: [published]
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   release:
@@ -47,7 +43,7 @@ jobs:
       - name: 📤 Upload the zip file as a release asset
         uses: actions/upload-release-asset@v1
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: "${{ github.event.release.upload_url }}"
           asset_path: "${{ github.workspace }}/custom_components/pluggit-pro/pluggit-pro.zip"

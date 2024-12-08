@@ -32,9 +32,6 @@ jobs:
             exit 1
           fi
 
-      - name: Submodule the Dantherm repository
-        run: git submodule add -b main https://github.com/Tvalley71/dantherm.git dantherm
-
       - name: 📦 Create zip file for the integration
         run: |
           cd "${{ github.workspace }}/custom_components/pluggit-pro"

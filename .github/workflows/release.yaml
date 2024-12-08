@@ -39,7 +39,7 @@ jobs:
           cd "${{ github.workspace }}/custom_components/Pluggit-Pro"
           zip -r pluggit-pro.zip ./
 
-        - name: 🔍 Debug GITHUB_TOKEN
+      - name: 🔍 Debug GITHUB_TOKEN
         run: echo "GITHUB_TOKEN is set"
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -42,7 +42,7 @@ jobs:
       - name: 🔍 Debug GITHUB_TOKEN
         run: echo "GITHUB_TOKEN is set"
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
       - name: 📤 Upload the zip file as a release asset
         uses: actions/upload-release-asset@v1

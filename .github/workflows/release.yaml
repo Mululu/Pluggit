@@ -42,12 +42,12 @@ jobs:
       - name: 🔍 Debug GITHUB_TOKEN
         run: echo "GITHUB_TOKEN is set"
         env:
-            GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📤 Upload the zip file as a release asset
         uses: actions/upload-release-asset@v1
         env:
-            GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: "${{ github.event.release.upload_url }}"
           asset_path: "${{ github.workspace }}/custom_components/Pluggit-Pro/pluggit-pro.zip"

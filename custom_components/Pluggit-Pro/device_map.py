@@ -26,7 +26,7 @@ from homeassistant.const import EntityCategory
 
 
 class ComponentClass(int):
-    """Danterm components."""
+    """Pluggit components."""
 
     FP1 = 0x0001
     Week = 0x0002

@@ -1,4 +1,4 @@
-# Pluggit
+# Pluggit Pro
 
 Home Assistant Integration für Pluggit Lüftungsgeräte
 

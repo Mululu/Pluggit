@@ -1,8 +1,9 @@
 {
-  "name": "Pluggit",
+  "name": "Pluggit Pro",
   "zip_release": true,
   "hide_default_branch": false,
-  "filename": "pluggit.zip",
+  "filename": "pluggit-pro
+  .zip",
   "render_readme": true,
   "content_in_root": false
 }

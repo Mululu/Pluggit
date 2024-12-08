@@ -1,7 +1,7 @@
 """The constants."""
 
-DOMAIN = "pluggit"
-DEFAULT_NAME = "Pluggit"
+DOMAIN = "pluggit-pro"
+DEFAULT_NAME = "Pluggit Pro"
 DEFAULT_SCAN_INTERVAL = 5
 DEFAULT_PORT = 502
 
